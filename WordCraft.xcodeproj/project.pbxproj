@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		59FC62072E0EBA190076D91F /* WordCraftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FC62062E0EBA190076D91F /* WordCraftApp.swift */; };
+		59FC62092E0EBA190076D91F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FC62082E0EBA190076D91F /* ContentView.swift */; };
+		59FC620B2E0EBA190076D91F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59FC620A2E0EBA190076D91F /* Assets.xcassets */; };
+		59FC620D2E0EBA190076D91F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FC620C2E0EBA190076D91F /* Persistence.swift */; };
+		59FC62102E0EBA190076D91F /* WordCraft.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 59FC620E2E0EBA190076D91F /* WordCraft.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		59FC62182E0EBA1A0076D91F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -25,6 +33,11 @@
 
 /* Begin PBXFileReference section */
 		59FC62032E0EBA190076D91F /* WordCraft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordCraft.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59FC62062E0EBA190076D91F /* WordCraftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCraftApp.swift; sourceTree = "<group>"; };
+		59FC62082E0EBA190076D91F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		59FC620A2E0EBA190076D91F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59FC620C2E0EBA190076D91F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		59FC620F2E0EBA190076D91F /* WordCraft.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WordCraft.xcdatamodel; sourceTree = "<group>"; };
 		59FC62172E0EBA1A0076D91F /* WordCraftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordCraftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59FC62212E0EBA1A0076D91F /* WordCraftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordCraftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -88,6 +101,13 @@
 		59FC61FA2E0EBA190076D91F = {
 			isa = PBXGroup;
 			children = (
+				59FC623B2E0EBA890076D91F /* Resources */,
+				59FC623A2E0EBA830076D91F /* UI */,
+				59FC62392E0EBA7A0076D91F /* Monetization */,
+				59FC62382E0EBA750076D91F /* Data */,
+				59FC62372E0EBA6E0076D91F /* Features */,
+				59FC62362E0EBA620076D91F /* Core */,
+				59FC62352E0EBA540076D91F /* App */,
 				59FC62052E0EBA190076D91F /* WordCraft */,
 				59FC621A2E0EBA1A0076D91F /* WordCraftTests */,
 				59FC62242E0EBA1A0076D91F /* WordCraftUITests */,
@@ -103,6 +123,60 @@
 				59FC62212E0EBA1A0076D91F /* WordCraftUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		59FC62352E0EBA540076D91F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				59FC62082E0EBA190076D91F /* ContentView.swift */,
+				59FC62062E0EBA190076D91F /* WordCraftApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		59FC62362E0EBA620076D91F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		59FC62372E0EBA6E0076D91F /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		59FC62382E0EBA750076D91F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				59FC620C2E0EBA190076D91F /* Persistence.swift */,
+				59FC620E2E0EBA190076D91F /* WordCraft.xcdatamodeld */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		59FC62392E0EBA7A0076D91F /* Monetization */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Monetization;
+			sourceTree = "<group>";
+		};
+		59FC623A2E0EBA830076D91F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		59FC623B2E0EBA890076D91F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				59FC620A2E0EBA190076D91F /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59FC620B2E0EBA190076D91F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +324,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59FC620D2E0EBA190076D91F /* Persistence.swift in Sources */,
+				59FC62092E0EBA190076D91F /* ContentView.swift in Sources */,
+				59FC62102E0EBA190076D91F /* WordCraft.xcdatamodeld in Sources */,
+				59FC62072E0EBA190076D91F /* WordCraftApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +654,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		59FC620E2E0EBA190076D91F /* WordCraft.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				59FC620F2E0EBA190076D91F /* WordCraft.xcdatamodel */,
+			);
+			currentVersion = 59FC620F2E0EBA190076D91F /* WordCraft.xcdatamodel */;
+			path = WordCraft.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 59FC61FB2E0EBA190076D91F /* Project object */;
 }
